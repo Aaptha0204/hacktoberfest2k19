@@ -1,15 +1,12 @@
 n=int(input("Enter an integer:"))
-print("Factors are:")
-i=0
-for(i=0;i<n;i++)
-while(i<=n):
-    k=0
+i=1; c=0
+while i<n:
+    j=1;f=0
     if(n%i==0):
-        j=1
-        while(j<=i):
-            if(i%j==1):
-                k=k+1
-            j=j+1
-        if(k==2):
-            print(i)
-    i=i+1
+           while j<i:
+                   if(i%j==0):
+                        f=f+1
+                       j=j+1
+     if(f==1):
+        c=c+1
+ print('the number of prime factors are',c)
